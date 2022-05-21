@@ -62,6 +62,19 @@ const resolvers = {
     
       const token = signToken(user);
       return { token, user };
+    },
+    addBook: async (parent, { userId, bookId }, context) => {
+      if (context.user) {
+        const updatedUser = await User.findOneAndUpdate(
+          { _id: userId },
+          { $push: { books: { bookId, username: context.user.username } } },
+          { new: true, runValidators: true }
+        );
+    
+        return updatedUser;
+      }
+    
+      throw new AuthenticationError('You need to be logged in!');
     }
   }
 };
