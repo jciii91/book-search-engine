@@ -12,7 +12,6 @@ const typeDefs = gql`
     _id: ID
     username: String
     email: String
-    password: String
     savedBookCount: Int
     savedBooks: [Book]
   }
