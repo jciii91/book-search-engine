@@ -10,7 +10,7 @@ This project uses the full MERN stack to create a search engine for books using 
 
 ![image](https://user-images.githubusercontent.com/51002088/169718387-b5900cac-c59b-40e1-a02b-2f61424b2833.png)
 
-[Click here to access the deployed application](https://young-everglades-13808.herokuapp.com/saved)
+[Click here to access the deployed application](https://young-everglades-13808.herokuapp.com/)
 
 ## Table of Contents
 
